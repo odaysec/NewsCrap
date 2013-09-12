@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-NewsCrap - Google News Scraper CLI
-"""
+
 import argparse
 import csv
 import json
