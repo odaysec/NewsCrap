@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "newscrap"
+version = "0.1.0"
+description = "Google News Scraper CLI for OSINT and research"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "requests>=2.28.0",
+    "beautifulsoup4>=4.11.0",
+    "fake-useragent>=1.2.0",
+    "schedule>=1.1.0",
+    "Jinja2>=3.1.0",
+]
+
+[project.scripts]
+newscrap = "news_scrap:main"
+
+[tool.setuptools]
+py-modules = ["news_scrap"]
